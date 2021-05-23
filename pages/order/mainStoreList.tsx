@@ -1,6 +1,6 @@
 import { Badge, ListView, Tabs, WhiteSpace } from 'antd-mobile';
 import React, { useEffect, useRef, useState } from 'react';
-import MainStoreModal from '../component/MainStoreModal';
+import MainStoreModal from '../../components/order/MainStoreModal';
 
 const tabs = [
     { title: <Badge text={''}>주변매장</Badge> },
