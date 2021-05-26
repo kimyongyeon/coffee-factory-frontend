@@ -13,7 +13,7 @@ const closest = (el, selector) => {
 }
 
 interface Props {
-
+    title: String;
 }
 
 const MainStoreModal = (props: Props) => {
@@ -52,7 +52,7 @@ const MainStoreModal = (props: Props) => {
                 title="주문 매장 선택"
                 footer={[{ text: '해당 매장에서 주문합니다.', onPress: () => { console.log('ok'); onClose('modal1')(); } }]}
                 wrapProps={{ onTouchStart: onWrapTouchStart }}
-                afterClose={() => { console.log('afterClose'); }}
+                // afterClose={() => { console.log('afterClose'); }}
             >
                 <div style={{ height: 200, overflow: 'auto' }}>
                     <img src="https://t1.daumcdn.net/cfile/tistory/2636C73D568B80CF2F" alt="매장사진" width="100%" height="auto" />
